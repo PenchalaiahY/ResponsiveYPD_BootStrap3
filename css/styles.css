@@ -1,0 +1,28 @@
+/* Responnsive Robot website by YPD */
+
+/* ----------------------
+      Navigation Bar
+-------------------------*/
+
+h1.logo {
+  margin: 0px 20px;
+  color: rgb(78,58,23) !important;
+  text-shadow: 4px 4px 3px grey;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.logo:hover {
+  text-shadow: 6px 6px 3px grey;
+  cursor: pointer;
+}
+
+/* Unordered list of Menus */
+navbar-nav a {
+  font-weight: bolder;
+  font-size: 16px;
+}
+.buildRob {
+  margin: 10px 10px;
+}
+/* End of Navigation bar settings */
