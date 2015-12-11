@@ -1,14 +1,24 @@
 /* Responnsive Robot website by YPD */
 
+body
+{
+  background-image: url("../images/main_background.jpg");
+}
 /* ----------------------
       Navigation Bar
 -------------------------*/
-
+.navbar {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 0px;
+}
+.header {
+  overflow: hidden;
+}
 h1.logo {
-  margin: 0px 20px;
+  margin: 0px;
   color: rgb(78,58,23) !important;
   text-shadow: 4px 4px 3px grey;
-  text-align: center;
   font-size: 40px;
   font-weight: bold;
 }
@@ -18,11 +28,169 @@ h1.logo {
 }
 
 /* Unordered list of Menus */
-navbar-nav a {
-  font-weight: bolder;
+.navbar-nav a {
+  font-weight: bold;
   font-size: 16px;
 }
-.buildRob {
-  margin: 10px 10px;
-}
 /* End of Navigation bar settings */
+
+/* -------------------
+  Main container
+  -------------------- */
+#main {
+  /* changes background color to white */
+  background-color: white;
+}
+
+/* ----------------------------
+    Section Title Starts here
+-------------------------------*/
+.sectionTitle {
+  /* Add border top and bottom with curve edge using radius */
+  border-top: 2px solid rgb(201,190,171);
+  border-bottom: 2px solid rgb(201,190,171);
+  border-radius: 10px;
+  padding: 0px 0px 10px;
+  display: block;
+  margin: 30px 0px;
+}
+.sectionTitle h2 {
+  /* Positiions section title in middle and adds shadow
+    Changes font size to 30px with 0 margin bottom */
+    text-align: center;
+    text-shadow: 3px 3px 4px lightgrey;
+    vertical-align: middle;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.sectionTitle h5 {
+  /* Positions subheading to center and overides bootstrap 500 font weight */
+  text-align: center;
+  font-weight: bold;
+}
+/* End of Section Info */
+
+/* --------------------------------
+    3 section wrapper
+-------------------------------*/
+#Three_Sec_Wrap {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* --------------------------------
+    3 sections using panel
+-------------------------------*/
+.panel-body .img_wrap {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.panel-body h4 {
+  margin-top: 15px;
+}
+/* End of 3 sections */
+
+/* --------------------------------
+    3 sections using carousel for tablets and Phones
+-------------------------------*/
+
+.item h3 {
+  margin-top: 0px;
+  font-weight: bolder;
+  padding: 10px 20px;
+}
+.item .well {
+  margin: 300px 0px 0px;
+  font-weight: bolder;
+  padding: 5px 20px;
+}
+#slide1 {
+  background: url("../images/rsz_vision_sm_03.jpg") top center no-repeat;
+}
+#slide2 {
+  background: url("../images/rsz_buildingrobot_sm_01.jpg") top center no-repeat;
+}
+#slide3 {
+  background: url("../images/rsz_redundancy_sm_02.jpg") top center no-repeat;
+}
+#slide3 h3 {
+  color: white;
+}
+/* End of 3 sections Block */
+
+/* -------------------------------
+    Hero
+---------------------------------- */
+
+.hero {
+  overflow: hidden;
+}
+.hero #left_hero {
+  display: table-cell;
+  vertical-align: middle;
+}
+.hero .contentWrapper {
+  border-bottom: 4px solid rgb(200,200,200);
+  margin-left: 50px;
+}
+
+
+/* --------------------------------
+    Media Queries
+----------------------------------- */
+
+/* For Watches */
+@media (max-width: 245px) {
+  /* Header */
+  h1.logo {
+    font-size: 30px;
+  }
+  /* end of Header */
+}
+@media (max-width: 200px) {
+  /* Header */
+  h1.logo {
+    font-size: 25px;
+  }
+  .header {
+    padding: 0px;
+  }
+  /* end of Header */
+
+  /* sectionTitle */
+  .sectionTitle h2 {
+    font-size: 20px;
+  }
+  /* End of section title */
+}
+
+/* Media query for portrait phone*/
+@media (max-width: 480px) {
+  /* --------------------------------
+      3 sections using carousel for tablets and Phones
+  -------------------------------*/
+
+  .item h3 {
+    margin-top: 0px;
+    font-weight: bold;
+    padding: 10px 10px;
+  }
+  .item .well {
+    margin: 200px 0px 0px;
+    font-weight: bold;
+    padding: 5px 5px;
+  }
+  #slide1 {
+    background: url("../images/rsz_vision_xs_01.jpg") top center no-repeat;
+  }
+  #slide2 {
+    background: url("../images/rsz_buildingrobot_xs_02.jpg") top center no-repeat;
+  }
+  #slide3 {
+    background: url("../images/rsz_redundancy_xs_03.jpg") top center no-repeat;
+  }
+  /* End of 3 sections */
+
+}
+
+/* End of Media queries */

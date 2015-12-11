@@ -11,41 +11,47 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrapPtheme.min.css" />
-
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Navigation starts here -->
     <nav class="navbar navbar-default">
+      <!-- Container for Navigation bar
+          Fixes the content specific width -->
       <div class="container">
 
-        <div class="navbar-header">
-
+        <!-- Nav bar logo resides here -->
+        <div class="col-sm-3 col-md-3 col-lg-3 header navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation_menu" aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <h1 class="navbar-brand logo">YPD</h1>
+        </div>
+        <!-- End of navbar-header -->
 
-        </div> <!-- End of navbar-header -->
-
-        <div class="navbar-collapse collapse" id="navigation_menu">
+        <!-- Container for Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navigation_menu">
+          <!-- Navigation Menu list -->
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Reach Us</a></li>
           </ul>
-          <ul class="nav navbar-nav pull-right">
+          <!-- End of Navigation menu -->
+
+          <!-- Build a robot dropdown starts here -->
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+              <button type="button" id="buildingRobMenu" class="btn btn-success navbar-btn btn-block dropdown-toggle"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
                 Build a Robot
                 <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="buildingRobMenu">
                 <li class="dropdown-header">Humanoid</li>
                 <li>
                   <a href="#">Child Watcher</a>
@@ -63,26 +69,164 @@
                 </li>
               </ul>
             </li>
-          </ul> <!-- end of build new robot div -->
+          </ul>
+          <!--End of Build a Robot Dropdown -->
         </div>
-      </div> <!-- End of menu container -->
+        <!-- End of Navigation Menu container -->
+      </div>
+      <!-- End of Navigation-menu container -->
+    </nav>
+    <!-- End of Navigation bar -->
 
-    </nav> <!-- End of Navigation bar -->
+    <!-- Main container starts here
+      fixes content to specfic width -->
+    <div class="container" id="main">
 
-    <div class="container" id="sections">
-      <h1> Hello world </h1>
+      <!-- Section Title Starts here -->
+      <div class="sectionTitle">
+        <h2>Our Services</h2>
+        <h5>Building towards your core values.</h5>
+      </div>
+      <!-- End of Section Title -->
+
+      <!-- 3 Section Wrapper -->
+      <div id="Three_Sec_Wrap">
+        <!-- 3 section using 3 panels for Desktops -->
+        <div id="sections_using_Panel" class="visible-md visible-lg">
+
+          <!-- Section 1 starts here -->
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Our Vision</h3>
+              </div>
+              <div class="panel-body">
+                <div class="img_wrap">
+                  <img src="images/rsz_vision_md_03.jpg"   alt="Vision Image" class="img-thumbnail" />
+                </div>
+                <h4>Your vision is our vision</h4>
+                <p>Our product delivery stack is customer focused which makes our vision to align towards your vision.</p>
+              </div>
+              <div class="panel-footer">
+                <a class="btn btn-block btn-warning" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Section 1 ends here -->
+
+          <!-- Section 2 starts here -->
+          <div class="col-md-4">
+            <!-- Panel is used to display the section -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Robot Lovers!...</h3>
+              </div>
+              <div class="panel-body">
+                <div class="img_wrap">
+                  <img src="images/rsz_buildingrobot_md_01.jpg" alt="Vision Image" class="img-thumbnail" />
+                </div>
+                <h4>Pioneer in building Robots</h4>
+                <p>We build Industry level robot with aesthetic finish. Designed by pioneered experts who is capable
+                  to push hardware to its limits.</p>
+              </div>
+              <div class="panel-footer">
+                <a class="btn btn-block btn-warning" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Section 2 ends here -->
+
+          <!-- Section 3 starts here -->
+          <div class="col-md-4">
+            <!-- .vision centers content using auto margin -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Goal</h3>
+              </div>
+              <div class="panel-body">
+                <div class="img_wrap">
+                  <img src="images/rsz_redundancy_md_02.jpg" alt="Vision Image" class="img-thumbnail" />
+                </div>
+                <h4>Eliminate redundance jobs</h4>
+                <p>We focus on eliminating repeated jobs through automating process by building software or hardware robots.</p>
+              </div>
+              <div class="panel-footer">
+                <a class="btn btn-block btn-warning" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Section 3 ends here -->
+
+        </div><!-- End of Section Wrapper -->
+        <!-- End of 3 sections -->
+
+        <!-- Carousel for tablets and phones -->
+        <div id="sections_using_Carousel" class="carousel slide visible-sm visible-xs" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#sections_using_Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#sections_using_Carousel" data-slide-to="1"></li>
+            <li data-target="#sections_using_Carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div id="slide1" class="item active">
+              <h3>Our Vision</h3>
+              <div class="well well-sm" >
+                <h4>Your vision is our vision</h4>
+                <p class="lead">Our product delivery stack is customer focused which makes our vision to align towards your vision.</p>
+              </div>
+            </div>
+            <div id="slide2" class="item">
+              <h3>Robot Lovers!...</h3>
+              <div class="well well-sm" >
+                <h4>Pioneer in building Robots</h4>
+                <p class="lead">We build Industry level robot with aesthetic finish. Designed by pioneered experts who is capable
+                  to push hardware to its limits.</p>
+              </div>
+            </div>
+            <div id="slide3" class="item">
+              <h3>Goal</h3>
+              <div class="well well-sm">
+                <h4>Eliminate redundance jobs</h4>
+                <p class="lead">We focus on eliminating repeated jobs through automating process by building software or hardware robots.</p>
+              </div>
+            </div>
+          </div>
+          <div class="left carousel-control" href="#sections_using_Carousel" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true" />
+            <span class="sr-only"> Previous </span>
+          </div>
+          <div class="right carousel-control" href="#sections_using_Carousel" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true" />
+            <span class="sr-only"> Next </span>
+          </div>
+        </div>
+        <!-- End of Carousel -->
+      </div>
     </div>
+      <div class="jumbotron hero" id=hero>
+        <div class="container">
+          <div class="col-xs-6" id="left_hero">
+            <!-- .contentWrapper used to position content bottom of leftsideContent container -->
+            <div id="contentWrapper" class="contentWrapper">
+                <h2>You think, We Implement</h2>
+                <p>Imagination of our customer is our key. We design robot which always corelates with your imagination.</p>
+            </div>
+          </div>
+          <div class="col-xs-6 hero_img" id="right_hero">
+            <img src="images/hero_img.png" class="img-responsive"alt="">
+          </div>
+        </div>
+      </div>
+    <!--</div>-->
 
     <!-- All Javascript at the bottom of the page for faster page loading -->
-
-    <!-- First try for the online version of jQuery-->
-    <script src="http://code.jquery.com/jquery.js"></script>
-
-    <!-- If no online access, fallback to our hardcoded version of jQuery -->
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
 
     <!-- Bootstrap JS -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
 
   </body>
 </html>
