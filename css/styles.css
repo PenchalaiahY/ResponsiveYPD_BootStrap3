@@ -1,8 +1,10 @@
 /* Responnsive Robot website by YPD */
-
 body
 {
   background-image: url("../images/main_background.jpg");
+}
+.overflowHidden {
+  overflow: hidden;
 }
 /* ----------------------
       Navigation Bar
@@ -11,9 +13,6 @@ body
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-bottom: 0px;
-}
-.header {
-  overflow: hidden;
 }
 h1.logo {
   margin: 0px;
@@ -74,36 +73,41 @@ h1.logo {
     3 section wrapper
 -------------------------------*/
 #Three_Sec_Wrap {
-  overflow: hidden;
   margin-bottom: 10px;
 }
 /* --------------------------------
     3 sections using panel
 -------------------------------*/
 .panel-body .img_wrap {
+  /* img_wrap div set to 250px with auto margin on left and right */
   width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
 .panel-body h4 {
+  /* Adds space between image and Sub heading */
   margin-top: 15px;
+}
+.panel-body p {
+  text-align: justify;
 }
 /* End of 3 sections */
 
 /* --------------------------------
     3 sections using carousel for tablets and Phones
 -------------------------------*/
-
 .item h3 {
   margin-top: 0px;
   font-weight: bolder;
   padding: 10px 20px;
 }
 .item .well {
+  /* Well is pushed down by 300px with padding for the content inside */
   margin: 300px 0px 0px;
   font-weight: bolder;
   padding: 5px 20px;
 }
+/* Background images for each slide */
 #slide1 {
   background: url("../images/rsz_vision_sm_03.jpg") top center no-repeat;
 }
@@ -114,54 +118,125 @@ h1.logo {
   background: url("../images/rsz_redundancy_sm_02.jpg") top center no-repeat;
 }
 #slide3 h3 {
+  /* Last slide heading set to white color for better visibility */
   color: white;
 }
 /* End of 3 sections Block */
 
 /* -------------------------------
-    Hero
+    Hero Element
 ---------------------------------- */
-
 .hero {
-  overflow: hidden;
-}
-.hero #left_hero {
-  display: table-cell;
-  vertical-align: middle;
+  /* hero div wraps the hero floating columns */
+  margin-bottom: 0px;
 }
 .hero .contentWrapper {
+  /* border added under contentWrapper div
+  margin left and top is intialized in Jquery */
   border-bottom: 4px solid rgb(200,200,200);
-  margin-left: 50px;
+  font-weight: bolder;
 }
+/* End of hero element*/
 
+/* ---------------------------------------
+    powerfulInsight
+  ======================================== */
+
+  .powerfulInsight {
+    margin-top: 15px;
+  }
+  .powerfulInsight img {
+    margin: auto;
+  }
+
+/* Modal page */
+  .trow {
+    position: relative;
+  }
+  .cost {
+    position: absolute;
+    right:-10px;
+    top:10px;
+    padding: 10px;
+  }
+  .total-cost {
+    text-align: center;
+
+    font-size: 20px;
+  }
+/* End of powerfulInsight */
+
+/* FollowUs div grid style */
+footer {
+    background-color: #bbb;
+    padding: 20px;
+}
+footer .footer-col {
+  border-right: 2px solid grey;
+}
+.followus img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.navigation {
+  display: block;
+  font-size: 15px;
+  padding: 0px;
+  color: rgb(78,58,23);
+}
+#copyright {
+  text-align: center;
+}
 
 /* --------------------------------
     Media Queries
 ----------------------------------- */
+/* Media query for landscape Tablets and Medium desktops */
+@media (max-width: 990px) {
+  /* ------------------------------------------
+      Hero element
+    ------------------------------------------- */
+    #hero #contentWrapper h2 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    #hero #contentWrapper p {
+      font-size: 16px;
+    }
+  /* end of Hero */
 
-/* For Watches */
-@media (max-width: 245px) {
-  /* Header */
-  h1.logo {
-    font-size: 30px;
-  }
-  /* end of Header */
+  /* ------------------------------------------------
+      powerfulInsight
+    ------------------------------------------------ */
+    .powerfulInsight img {
+      margin:auto;
+    }
+  /* End of powerfulInsight */
 }
-@media (max-width: 200px) {
-  /* Header */
-  h1.logo {
-    font-size: 25px;
-  }
-  .header {
-    padding: 0px;
-  }
-  /* end of Header */
 
-  /* sectionTitle */
-  .sectionTitle h2 {
-    font-size: 20px;
-  }
-  /* End of section title */
+/* Media query for Navigation setting */
+@media (max-width: 767px) {
+
+    /* ------------------------------------------------
+        footer
+      ------------------------------------------------ */
+    footer .footer-col {
+      border-right: 0px;
+      border-bottom: 2px solid grey;
+    }
+    /* End of footer */
+
+}
+/* Media query for landscape Phones and Portrait tablet */
+@media (max-width: 678px) {
+  /* ------------------------------------------
+      Hero element
+    ------------------------------------------- */
+    #hero #contentWrapper h2 {
+      font-size: 20px;
+    }
+  /* end of Hero */
 }
 
 /* Media query for portrait phone*/
@@ -169,8 +244,8 @@ h1.logo {
   /* --------------------------------
       3 sections using carousel for tablets and Phones
   -------------------------------*/
-
   .item h3 {
+    /* Heading font weight and padding reduced */
     margin-top: 0px;
     font-weight: bold;
     padding: 10px 10px;
@@ -191,6 +266,16 @@ h1.logo {
   }
   /* End of 3 sections */
 
-}
+  /* ------------------------------------------
+      Hero element
+    ------------------------------------------- */
+  #hero #contentWrapper h2 {
+    font-size: 15px;
+  }
+  #hero #contentWrapper p {
+    font-size: 12px;
+  }
 
+  /* end of Hero */
+}
 /* End of Media queries */

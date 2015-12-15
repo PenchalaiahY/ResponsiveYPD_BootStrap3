@@ -22,7 +22,7 @@
       <div class="container">
 
         <!-- Nav bar logo resides here -->
-        <div class="col-sm-3 col-md-3 col-lg-3 header navbar-header">
+        <div class="col-sm-3 overflowHidden navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation_menu" aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -81,7 +81,6 @@
     <!-- Main container starts here
       fixes content to specfic width -->
     <div class="container" id="main">
-
       <!-- Section Title Starts here -->
       <div class="sectionTitle">
         <h2>Our Services</h2>
@@ -202,22 +201,166 @@
         </div>
         <!-- End of Carousel -->
       </div>
+      <!-- End of 3 sections -->
     </div>
-      <div class="jumbotron hero" id=hero>
+
+    <!-- Main content continues -->
+    <div class="container" id="main">
+      <!-- Hero element starts here -->
+      <div class="jumbotron hero overflowHidden row" id="hero">
         <div class="container">
-          <div class="col-xs-6" id="left_hero">
+          <div id="contentWrapper" class="contentWrapper col-xs-6" id="left_hero">
             <!-- .contentWrapper used to position content bottom of leftsideContent container -->
-            <div id="contentWrapper" class="contentWrapper">
-                <h2>You think, We Implement</h2>
-                <p>Imagination of our customer is our key. We design robot which always corelates with your imagination.</p>
-            </div>
+            <h2>You think, We Implement</h2>
+            <p>Imagination of our customer is our key. We design robot which always corelates with your imagination.</p>
           </div>
           <div class="col-xs-6 hero_img" id="right_hero">
             <img src="images/hero_img.png" class="img-responsive"alt="">
           </div>
         </div>
       </div>
-    <!--</div>-->
+      <!--Hero Element ends here-->
+
+
+      <!-- Powerful insight starts here -->
+      <div class="powerfulInsight well overflowHidden">
+        <div class="col-md-6">
+          <img src="images/rsz_sdlc.jpg" alt="SDLC" class="img-responsive" />
+        </div>
+        <div class="col-md-6">
+          <div class="contentWrap" id="right_contentWrap">
+            <h2>Flexible</h2>
+            <h3>Shared Development stack</h3>
+            <p class='lead'>Do you like to choose which part of stack is required for developing Robot.
+              We provide each stack as a service to help you build robot.</p>
+            <h4>
+              <button data-toggle="modal" href="#select_Stack" class="btn btn-primary btn-block selectStack">
+                <strong>Hire a Stack</strong>
+              </button>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="powerfulInsight well overflowHidden">
+        <div class="col-md-6">
+          <div class="contentWrap" id="right_contentWrap">
+            <h2>Flexible</h2>
+            <h3>Shared Development stack</h3>
+            <p class='lead'>Do you like to choose which part of stack is required for developing Robot.
+              We provide each stack as a service to help you build robot.</p>
+              <h4 class="visible-md visible-lg"><button type="button" data-toggle="modal" href="#select_Stack" class="btn btn-primary btn-block selectStack"><strong>Hire a Stack</strong></a></h4>
+          </div>
+        </div>
+        <div class="col-md-6 right_insight">
+          <img src="images/rsz_sdlc.jpg" alt="SDLC" class="img-responsive" />
+          <h4 class="visible-xs visible-sm"><button type="button" data-toggle="modal" href="#select_Stack" class="btn btn-primary btn-block selectStack"><strong>Hire a Stack</strong></a></h4>
+        </div>
+      </div>
+      <div class="modal" id="select_Stack">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal" data-target="#select_Stack">&times;</a>
+              <h4 class="modal-title">Choose a stack</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table table-bordered table-hover table-responsive table-condensed">
+                <tr class="bg-success">
+                  <th>
+                    <h4>Stack Name</h4>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="trow">
+                    <h4>Requirement Analysis</h4>
+                    <div class="label label-success cost">
+                      <sup>Rs</sup>10000
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="trow">
+                    <h4>Design</h4>
+                    <div class="label label-success cost">
+                      <sup>Rs</sup>10000
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="trow">
+                    <h4>Implementation</h4>
+                    <div class="label label-success cost">
+                      <sup>Rs</sup>10000
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="trow">
+                    <h4>Testing</h4>
+                    <div class="label label-success cost">
+                      <sup>Rs</sup>10000
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="trow">
+                    <h4>Evolution</h4>
+                    <div class="label label-success cost">
+                      <sup>Rs</sup>10000
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-info">
+                    <h4 class="total-cost">
+                      Total Cost: <sup>Rs</sup> <label id="total_Cost" >0</label>
+                    </h4>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of Modal-->
+    </div>
+    <!-- main content ends here -->
+
+    <footer class="footer row">
+      <div class="container">
+        <div class="col-sm-3 footer-col" id="company">
+          <h1 class="logo">YPD</h1>
+          <h5 class="lead">Rethink posibilities.</h6>
+        </div>
+        <div class="col-sm-4 footer-col" id="aboutus">
+          <h4>About Us</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="col-sm-2 footer-col">
+          <h4>Navigation:</h4>
+          <ul class="navigation">
+            <li class="navigation"><a class="navigation" href="#">Home</a></li>
+            <li class="navigation"><a class="navigation" href="#">Services</a></li>
+            <li class="navigation"><a class="navigation" href="portfolio.html">Portfolio</a></li>
+            <li class="navigation"><a class="navigation" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 followus">
+          <h4>Folow Us</h4>
+          <a href="#"><img src="images/followus_img_1.jpg" alt="Tweet us"></a>
+          <a href="#"><img src="images/followus_img_2.jpg" alt="Like us"></a>
+          <a href="#"><img src="images/followus_img_3.jpg" alt="Follow us in Google+"></a>
+          <a href="#"><img src="images/followus_img_4.jpg" alt="Follow us in linked in"></a>
+        </div>
+        <hr/>
+        <h5 id="copyright" class="col-xs-12 lead">Copyright (c) 2015 YPD All Rights Reserved.</h5>
+      </div>
+    </footer>
 
     <!-- All Javascript at the bottom of the page for faster page loading -->
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
