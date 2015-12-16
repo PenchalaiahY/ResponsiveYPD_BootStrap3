@@ -149,11 +149,18 @@
     /* border added under contentWrapper div
     margin left and top is intialized in Jquery */
     border-bottom: 4px solid rgb(200,200,200);
-    margin-top: 150px;
+  }
+  .contentWrapper > h3 {
+    font-size: 50px;
+    font-family: 'Cuprum', sans-serif !important;
+    margin-top: 50px;
   }
   .contentWrapper > h4 {
     /* justify the h4 paragraph */
     text-align: justify;
+    font-size:40px;
+    margin-top: 50px;
+    font-family: 'Cuprum', sans-serif !important;
   }
   /* End of hero element*/
 
@@ -223,13 +230,14 @@
     /* -------------------------------
         Hero Element
     ---------------------------------- */
-    .hero .contentWrapper {
-      /* margin-top of text inside*/
-      margin-top: 100px;
+    .contentWrapper > h3 {
+      font-size: 40px;
+      margin-top: 25px;
     }
-    .contentWrapper h3 {
-      /* header fontsize shriked */
-      font-size: 22px;
+    .contentWrapper > h4 {
+      /* justify the h4 paragraph */
+      font-size:30px;
+      margin-top: 25px;
     }
     /* End of hero element*/
   }
@@ -247,8 +255,15 @@
     }
     .hero .contentWrapper {
       /* margin-top and left is changed due of screen size change */
-      margin-top: 80px;
-      margin-left: 30px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .contentWrapper > h3 {
+      font-size: 40px;
+    }
+    .contentWrapper > h4 {
+      /* justify the h4 paragraph */
+      font-size:30px;
     }
     /* End of hero element*/
 
@@ -271,18 +286,20 @@
     .hero {
       /* height is change for phones */
       height: 200px;
+      padding: 20px 10px;
     }
     .hero .contentWrapper {
       /* margin-top and left is changed due of screen size change */
-      margin-top: 10px;
-      margin-left: 10px;
+      margin-top: 5px;
+      margin-left: 5px;
     }
     /* change of font size */
-    .contentWrapper h3 {
-      font-size: 18px;
+    .contentWrapper > h3 {
+      font-size: 20px;
     }
-    .contentWrapper h4 {
-      font-size: 14px;
+    .contentWrapper > h4 {
+      /* justify the h4 paragraph */
+      font-size:15px;
     }
     /* End of hero element*/
 
