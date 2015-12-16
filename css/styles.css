@@ -1,159 +1,210 @@
-/* Responnsive Robot website by YPD */
-body
-{
-  background-image: url("../images/main_background.jpg");
-}
-.overflowHidden {
-  overflow: hidden;
-}
-/* ----------------------
-      Navigation Bar
--------------------------*/
-.navbar {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-bottom: 0px;
-}
-h1.logo {
-  margin: 0px;
-  color: rgb(78,58,23) !important;
-  text-shadow: 4px 4px 3px grey;
-  font-size: 40px;
-  font-weight: bold;
-}
-.logo:hover {
-  text-shadow: 6px 6px 3px grey;
-  cursor: pointer;
-}
+  /* Responnsive Robot website by YPD */
 
-/* Unordered list of Menus */
-.navbar-nav a {
-  font-weight: bold;
-  font-size: 16px;
-}
-/* End of Navigation bar settings */
-
-/* -------------------
-  Main container
-  -------------------- */
-#main {
-  /* changes background color to white */
-  background-color: white;
-}
-
-/* ----------------------------
-    Section Title Starts here
--------------------------------*/
-.sectionTitle {
-  /* Add border top and bottom with curve edge using radius */
-  border-top: 2px solid rgb(201,190,171);
-  border-bottom: 2px solid rgb(201,190,171);
-  border-radius: 10px;
-  padding: 0px 0px 10px;
-  display: block;
-  margin: 30px 0px;
-}
-.sectionTitle h2 {
-  /* Positiions section title in middle and adds shadow
-    Changes font size to 30px with 0 margin bottom */
+  /* Global styles */
+  body
+  {
+    background-image: url("../images/main_background.jpg");
+  }
+  .overflowHidden {
+    overflow: hidden;
+  }
+  p{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .alert {
+    display: none;
+  }
+  .textcenter {
     text-align: center;
-    text-shadow: 3px 3px 4px lightgrey;
-    vertical-align: middle;
-    font-size: 30px;
-    margin-bottom: 0px;
-}
-.sectionTitle h5 {
-  /* Positions subheading to center and overides bootstrap 500 font weight */
-  text-align: center;
-  font-weight: bold;
-}
-/* End of Section Info */
+  }
+  /* ----------------------
+        Navigation Bar
+  -------------------------*/
+  .navbar {
+    margin-bottom: 0px; /* Clearing default navbar margin of bootstrap */
+  }
+  h1.logo {
+    /* Provides style to logo */
+    margin: 0px;
+    color: rgb(78,58,23) !important;
+    text-shadow: 4px 4px 3px grey;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .logo:hover {
+    /* On hover shadow and Pointer cursor */
+    text-shadow: 6px 6px 3px grey;
+    cursor: pointer;
+  }
 
-/* --------------------------------
-    3 section wrapper
--------------------------------*/
-#Three_Sec_Wrap {
-  margin-bottom: 10px;
-}
-/* --------------------------------
-    3 sections using panel
--------------------------------*/
-.panel-body .img_wrap {
-  /* img_wrap div set to 250px with auto margin on left and right */
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.panel-body h4 {
-  /* Adds space between image and Sub heading */
-  margin-top: 15px;
-}
-.panel-body p {
-  text-align: justify;
-}
-/* End of 3 sections */
+  /* Unordered list of Menus */
+  .navbar-nav a {
+    /* Increased font size and weight of navigation items*/
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* End of Navigation bar settings */
 
-/* --------------------------------
-    3 sections using carousel for tablets and Phones
--------------------------------*/
-.item h3 {
-  margin-top: 0px;
-  font-weight: bolder;
-  padding: 10px 20px;
-}
-.item .well {
-  /* Well is pushed down by 300px with padding for the content inside */
-  margin: 300px 0px 0px;
-  font-weight: bolder;
-  padding: 5px 20px;
-}
-/* Background images for each slide */
-#slide1 {
-  background: url("../images/rsz_vision_sm_03.jpg") top center no-repeat;
-}
-#slide2 {
-  background: url("../images/rsz_buildingrobot_sm_01.jpg") top center no-repeat;
-}
-#slide3 {
-  background: url("../images/rsz_redundancy_sm_02.jpg") top center no-repeat;
-}
-#slide3 h3 {
-  /* Last slide heading set to white color for better visibility */
-  color: white;
-}
-/* End of 3 sections Block */
+  /* -------------------
+    Main container
+    -------------------- */
+  #main {
+    /* changes background color to white */
+    background-color: white;
+  }
 
-/* -------------------------------
-    Hero Element
----------------------------------- */
-.hero {
-  /* hero div wraps the hero floating columns */
-  margin-bottom: 0px;
-}
-.hero .contentWrapper {
-  /* border added under contentWrapper div
-  margin left and top is intialized in Jquery */
-  border-bottom: 4px solid rgb(200,200,200);
-  font-weight: bolder;
-}
-/* End of hero element*/
+  /* ----------------------------
+      Section Title Starts here
+  -------------------------------*/
+  .sectionTitle {
+    /* Add border top and bottom with curve edge using radius */
+    border-top: 2px solid rgb(201,190,171);
+    border-bottom: 2px solid rgb(201,190,171);
+    border-radius: 10px;
+    padding: 0px 0px 10px;
+    display: block;
+    margin: 30px 0px;
+  }
+  .sectionTitle h2 {
+    /* Positiions section title in middle and adds shadow
+      Changes font size to 30px with 0 margin bottom */
+      text-align: center;
+      text-shadow: 3px 3px 4px lightgrey;
+      vertical-align: middle;
+      font-size: 30px;
+      margin-bottom: 0px;
+  }
+  .sectionTitle h5 {
+    /* Positions subheading to center and overides bootstrap 500 font weight */
+    text-align: center;
+    font-weight: bold;
+  }
+  /* End of Section Info */
 
-/* ---------------------------------------
-    powerfulInsight
-  ======================================== */
-
-  .powerfulInsight {
+  /* --------------------------------
+      3 section wrapper
+  -------------------------------*/
+  #Three_Sec_Wrap {
+    margin-bottom: 10px;
+  }
+  /* --------------------------------
+      3 sections using panel
+  -------------------------------*/
+  .panel-body .img_wrap {
+    /* img_wrap div set to 250px with auto margin on left and right */
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .panel-body h4 {
+    /* Adds space between image and Sub heading */
     margin-top: 15px;
   }
-  .powerfulInsight img {
-    margin: auto;
+  .panel-body p {
+    text-align: justify;
+  }
+  /* End of 3 sections */
+
+  /* --------------------------------
+      3 sections using carousel for tablets and Phones
+  -------------------------------*/
+  .item h3 {
+    /* Heading default margin is cleared
+      font set to bolder with additional padding*/
+    margin-top: 0px;
+    font-weight: bolder;
+    padding: 10px 20px;
+  }
+  .item .well {
+    /* Well is pushed down by 190px with padding for the content inside */
+    margin: 190px 0px 0px;
+    padding: 5px 20px;
+  }
+  /* Background images for each slide */
+  #slide1 {
+    background: url("../images/rsz_vision_sm_03.jpg") top center no-repeat;
+  }
+  #slide2 {
+    background: url("../images/rsz_buildingrobot_sm_01.jpg") top center no-repeat;
+  }
+  #slide3 {
+    background: url("../images/rsz_redundancy_sm_02.jpg") top center no-repeat;
+  }
+  #slide3 h3 {
+    /* Last slide heading set to white color for better visibility */
+    color: white;
+  }
+  /* End of 3 sections Block */
+
+  /* -------------------------------
+      Hero Element
+  ---------------------------------- */
+  .hero {
+    /* hero div wraps the hero floating columns */
+    margin-bottom: 0px;
+  }
+  .hero .contentWrapper {
+    /* border added under contentWrapper div
+    margin left and top is intialized in Jquery */
+    border-bottom: 4px solid rgb(200,200,200);
+    margin-top: 150px;
+  }
+  .contentWrapper > h4 {
+    /* justify the h4 paragraph */
+    text-align: justify;
+  }
+  /* End of hero element*/
+
+  /* ---------------------------------------
+      powerfulInsight
+    ======================================== */
+
+    .tabbable {
+      margin-top: 15px;
+    }
+    .powerfulInsight img {
+      /* Centers the image in display */
+      margin: auto;
+    }
+/* End of powerfulInsight */
+
+/* ----------------------------------
+    Footer
+  ----------------------------------- */
+/* FollowUs div grid style */
+  footer {
+    /* background color and padding of footer */
+      background-color: #bbb;
+      padding: 20px;
+  }
+  footer .footer-col {
+    /* Adds line in between */
+    border-right: 2px solid grey;
+  }
+  .followus img {
+    /* sets the width of the image*/
+    width: 30px;
+    margin-right: 10px;
+  }
+  .navigation {
+    /* makes each link to be block with 0 padding and sets dark brown as color */
+    display: block;
+    font-size: 15px;
+    padding: 0px;
+    color: rgb(78,58,23);
   }
 
-/* Modal page */
+/* ----------------------------------
+    Modal page
+  -----------------------------------   */
   .trow {
+    /* changes parent to tbe relative positioned for absolute movement */
     position: relative;
   }
   .cost {
+    /* Postions cost */
     position: absolute;
     right:-10px;
     top:10px;
@@ -161,121 +212,105 @@ h1.logo {
   }
   .total-cost {
     text-align: center;
-
     font-size: 20px;
   }
-/* End of powerfulInsight */
-
-/* FollowUs div grid style */
-footer {
-    background-color: #bbb;
-    padding: 20px;
-}
-footer .footer-col {
-  border-right: 2px solid grey;
-}
-.followus img {
-  width: 30px;
-  margin-right: 10px;
-  border-radius: 10px;
-}
-.navigation {
-  display: block;
-  font-size: 15px;
-  padding: 0px;
-  color: rgb(78,58,23);
-}
-#copyright {
-  text-align: center;
-}
 
 /* --------------------------------
-    Media Queries
------------------------------------ */
+      Media Queries
+  ----------------------------------- */
 /* Media query for landscape Tablets and Medium desktops */
-@media (max-width: 990px) {
-  /* ------------------------------------------
-      Hero element
-    ------------------------------------------- */
-    #hero #contentWrapper h2 {
-      font-size: 25px;
-      font-weight: bold;
+  @media (max-width: 990px) {
+    /* -------------------------------
+        Hero Element
+    ---------------------------------- */
+    .hero .contentWrapper {
+      /* margin-top of text inside*/
+      margin-top: 100px;
     }
-    #hero #contentWrapper p {
-      font-size: 16px;
+    .contentWrapper h3 {
+      /* header fontsize shriked */
+      font-size: 22px;
     }
-  /* end of Hero */
+    /* End of hero element*/
+  }
 
-  /* ------------------------------------------------
-      powerfulInsight
-    ------------------------------------------------ */
-    .powerfulInsight img {
-      margin:auto;
+  /* Media query for Landscape phone and Portrait tablets */
+  @media (max-width: 767px) {
+    /* -------------------------------
+        Hero Element
+    ---------------------------------- */
+    .hero {
+      /* background changed to show some importantance */
+      background: grey;
+      color: white;
+      height: 300px;
     }
-  /* End of powerfulInsight */
-}
-
-/* Media query for Navigation setting */
-@media (max-width: 767px) {
+    .hero .contentWrapper {
+      /* margin-top and left is changed due of screen size change */
+      margin-top: 80px;
+      margin-left: 30px;
+    }
+    /* End of hero element*/
 
     /* ------------------------------------------------
         footer
       ------------------------------------------------ */
     footer .footer-col {
+      /* Lines are changed from vertical to horizontal */
       border-right: 0px;
       border-bottom: 2px solid grey;
     }
     /* End of footer */
 
-}
-/* Media query for landscape Phones and Portrait tablet */
-@media (max-width: 678px) {
-  /* ------------------------------------------
-      Hero element
-    ------------------------------------------- */
-    #hero #contentWrapper h2 {
-      font-size: 20px;
+  }
+  /* Media query for portrait phone*/
+  @media (max-width: 480px), (max-height: 300px) {
+    /* -------------------------------
+        Hero Element
+    ---------------------------------- */
+    .hero {
+      /* height is change for phones */
+      height: 200px;
     }
-  /* end of Hero */
-}
+    .hero .contentWrapper {
+      /* margin-top and left is changed due of screen size change */
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    /* change of font size */
+    .contentWrapper h3 {
+      font-size: 18px;
+    }
+    .contentWrapper h4 {
+      font-size: 14px;
+    }
+    /* End of hero element*/
 
-/* Media query for portrait phone*/
-@media (max-width: 480px) {
-  /* --------------------------------
-      3 sections using carousel for tablets and Phones
-  -------------------------------*/
-  .item h3 {
-    /* Heading font weight and padding reduced */
-    margin-top: 0px;
-    font-weight: bold;
-    padding: 10px 10px;
+    /* --------------------------------
+        3 sections using carousel for tablets and Phones
+    -------------------------------*/
+    .item h3 {
+      /* Heading font weight and padding reduced */
+      margin-top: 0px;
+      font-weight: bold;
+      padding: 10px 10px;
+    }
+    .item .well {
+      /* Well is pushed up */
+      margin: 150px 0px 0px;
+      font-weight: bold;
+      padding: 5px 5px;
+    }
+    /* background images changed */
+    #slide1 {
+      background: url("../images/rsz_vision_xs_01.jpg") top center no-repeat;
+    }
+    #slide2 {
+      background: url("../images/rsz_buildingrobot_xs_02.jpg") top center no-repeat;
+    }
+    #slide3 {
+      background: url("../images/rsz_redundancy_xs_03.jpg") top center no-repeat;
+    }
+    /* End of 3 sections */
   }
-  .item .well {
-    margin: 200px 0px 0px;
-    font-weight: bold;
-    padding: 5px 5px;
-  }
-  #slide1 {
-    background: url("../images/rsz_vision_xs_01.jpg") top center no-repeat;
-  }
-  #slide2 {
-    background: url("../images/rsz_buildingrobot_xs_02.jpg") top center no-repeat;
-  }
-  #slide3 {
-    background: url("../images/rsz_redundancy_xs_03.jpg") top center no-repeat;
-  }
-  /* End of 3 sections */
-
-  /* ------------------------------------------
-      Hero element
-    ------------------------------------------- */
-  #hero #contentWrapper h2 {
-    font-size: 15px;
-  }
-  #hero #contentWrapper p {
-    font-size: 12px;
-  }
-
-  /* end of Hero */
-}
-/* End of Media queries */
+  /* End of Media queries */
